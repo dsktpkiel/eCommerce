@@ -7,10 +7,10 @@ on:
   pull_request:
     paths:
       - 'frontend/**'
-
+  workflow_dispatch:
 jobs:
   audit-and-lint:
-    name: Audit & Lint Backend
+    name: Audit & Lint Backend  
     runs-on: ubuntu-latest
     defaults:
       run:
